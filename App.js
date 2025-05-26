@@ -12,7 +12,9 @@ export default function App() {
       <Image source = {imgMedio} style={styles.image}></Image>
       <TextInput style={styles.inputMail} placeholder='Email' />
       <TextInput secureTextEntry style={styles.inputPass} placeholder='Contraseña'/>
-      <TouchableOpacity style={{backgroundColor: '#9455f4', marginTop: '8%', width: '80%'}}><Text style={{textAlign: 'center', color: 'white'}}>INGRESAR</Text></TouchableOpacity>
+      <TouchableOpacity style={styles.botonIngreso}><Text style={{alignSelf: 'center', color: 'white'}}>INGRESAR</Text></TouchableOpacity>
+      <Text style={{marginTop: '5%', fontWeight: '600', alignSelf: 'center'}}>Olvidaste la clave?</Text>
+      <TouchableOpacity style={{marginTop: '5%', alignSelf: 'center'}}><Text style={{fontWeight: '600'}}>Crear Cuenta</Text></TouchableOpacity>
     </>
   );
 }
@@ -52,4 +54,14 @@ const styles = StyleSheet.create({
     marginTop: '2%',
     padding: 10,
   },
+  botonIngreso: {
+    alignSelf: 'center',
+    backgroundColor: '#9455f4',
+    marginTop: '10%',
+    width: '80%',
+    height: '5%',
+    borderRadius: 5,
+    justifyContent:"center",
+    alignContent:"center"
+  }
 });
